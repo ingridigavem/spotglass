@@ -7,47 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
 
-<body>
-    <nav>
-        MENU LATERAL
+<body onload="carregar()">
+    <header class="header">
+        <label id="menu-lateral" for="check"><img class="menu-icon" src="img/menu.png" alt="menu"></label>
+    </header>
+
+    <input type="checkbox" id="check">
+    <nav class=" bar">
+
+        <div class="menu">
+            <a href="">
+                <div class="link perfil-menu"><img class="profile-pic" src="./img/profile.png" alt="">Clint Eastwood</div>
+            </a>
+            <a href="">
+                <div class="link">Mais ouvidas</div>
+            </a>
+            <a href="">
+                <div class="link">Playlist</div>
+            </a>
+            <a>
+                <div class="div-search">
+                    <input class="search-bar" type="text" placeholder="Busque por algo...">
+                    <img class="search-icon" src="./img/search.png" alt="">
+                </div>
+
+            </a>
+        </div>
     </nav>
 
-    <main>
+    <main class="main">
         <section class="section-main-title">
-            <h1 class="main-title">Bem vindo ao Spotglass =D</h1>
+            <h1 class="main-title" id="div_msg"></h1>
         </section>
         <section class="section-listen-again">
-            <div>ouca novamente</div>
+            <div>Ouça novamente</div>
         </section>
 
         <section class="section-hits">
             <div class="hits-box" id="hit-nacional">
-                <h2 class="suggestions-title">Hit nacional</h2>
+                <h2 class="suggestions-title">Hits nacionais</h2>
                 <div class="avatar-options">
                     <img src="img/ui1.png" alt="" class="suggestions-avatar">
                     <ol>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
+                        <li>Banda X</li>
+                        <li>Banda Y</li>
+                        <li>Banda Z</li>
+                        <li>Banda W</li>
+                    
                     </ol>
                 </div>
             </div>
 
             <div class="hits-box" id="hit-internacional">
-                <h2 class="suggestions-title">Hit internacional</h2>
+                <h2 class="suggestions-title">Hits internacionais</h2>
                 <div class="avatar-options">
                     <img src="img/ui2.png" alt="" class="suggestions-avatar">
                     <ol>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
+                        <li>Banda 1</li>
+                        <li>Banda 2</li>
+                        <li>Banda 3</li>
+                        <li>Banda 4</li>
                     </ol>
                 </div>
             </div>
@@ -57,21 +80,24 @@
                 <div class="avatar-options">
                     <img src="img/ui3.png" alt="" class="suggestions-avatar">
                     <ol>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
-                        <li>Banda x</li>
+                        <li>Banda A</li>
+                        <li>Banda B</li>
+                        <li>Banda C</li>
+                        <li>Banda D</li>
                     </ol>
                 </div>
             </div>
         </section>
 
         <section class="section-news">
-            <div>novidades artistas q vcs segue</div>
+            <div>Novidades dos artistas que você segue</div>
         </section>
 
     </main>
+
+    <footer></footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
