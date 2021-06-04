@@ -13,19 +13,25 @@ body{
 }
 
 main{
-    text-align: center;
-    padding: 0 10vh;
+    padding: 5vh 10vh 0 10vh;
     width: 85%;
     height: 100vh;
     display: grid;
     row-gap: 5%;
     grid-template-rows: 15% 20% 25% 20%;
     grid-template-areas: 'sectionMainTitle' ' sectionListenAgain' 'sectionHits' 'sectionNews';
+    
 }
 
 nav{
     width: 15%;
     background-color: darkorchid;
+}
+
+.section-main-title, .section-listen-again, .section-news{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .section-main-title{
@@ -68,6 +74,7 @@ nav{
     display: flex;
     gap: 5%;
     align-items: center;
+    text-align: center;
 }
 
 .avatar-options ol{
