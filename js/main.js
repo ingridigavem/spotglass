@@ -1,7 +1,7 @@
 const inputCheckbox = document.querySelector('#check');
 const divMain = document.querySelector('.main');
 const searchIcon = document.querySelector('.search-icon');
-const player = document.querySelector('.player');
+const player = document.querySelector('footer');
 
 
 searchIcon.classList.add('esconde-lupa');

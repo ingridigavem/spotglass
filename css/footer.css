@@ -1,17 +1,16 @@
 
 footer {
     display: flex;
-    justify-content: space-around;
+    height: 10vh;
+    position: fixed;
+    padding-left: 37%;
 }
 .player {
    
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
+    
 }
 
 .player a {
@@ -26,6 +25,6 @@ img {
 }
 
 .movePlayer{
-    padding: 5vh 10vh 5vh 20%;
+    padding-left: 42%;
     transition-delay: 200ms;
 }
