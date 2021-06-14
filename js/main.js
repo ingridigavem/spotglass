@@ -1,12 +1,14 @@
 const inputCheckbox = document.querySelector('#check');
 const divMain = document.querySelector('.main');
 const searchIcon = document.querySelector('.search-icon');
+const player = document.querySelector('.player');
 
 
 searchIcon.classList.add('esconde-lupa');
 
 inputCheckbox.addEventListener('click', () => {
     divMain.classList.toggle('moveMain');
+    player.classList.toggle('movePlayer');
     searchIcon.classList.toggle('esconde-lupa');
 });
 
